@@ -31,11 +31,12 @@ public class Main extends JavaPlugin implements Listener{
 		Player jugador = e.getPlayer();
 		jugador.sendMessage(ChatColor.AQUA + "============" + ChatColor.DARK_GRAY + "[" + ChatColor.GOLD + "Code" + ChatColor.DARK_GRAY + "]" + ChatColor.AQUA + "===========");
 		jugador.sendMessage(ChatColor.YELLOW + " » Bienvenido al servidor «");
-		jugador.sendMessage(ChatColor.AQUA + "Visita nuesta pagina de facebook »" + Facebook);
-		jugador.sendMessage(ChatColor.AQUA + "Siguenos en Twitter »" + Twitter);
-		jugador.sendMessage(ChatColor.AQUA + "Developer? Vista nuestro GitHub »" + GitHub);
-		jugador.sendMessage(ChatColor.AQUA + "Mira nuesta pagina web »" + WEB);
+		jugador.sendMessage(ChatColor.AQUA + "Visita nuesta pagina de facebook »" + " " + Facebook);
+		jugador.sendMessage(ChatColor.AQUA + "Siguenos en Twitter »" + " " + Twitter);
+		jugador.sendMessage(ChatColor.AQUA + "Developer? Vista nuestro GitHub »" + " " + GitHub);
+		jugador.sendMessage(ChatColor.AQUA + "Mira nuesta pagina web »" + " " + WEB);
 		jugador.sendMessage(ChatColor.AQUA + "=============================");
 		}
 	}
 }
+
