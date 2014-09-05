@@ -1,5 +1,14 @@
 package me.DJBiokinetix;
 
+/*
+*	Plugin de Plugin hecho para PlayCraft Network
+*	Plugin especial para links sociales
+*	API: craftbukkit-1.7-R0.1
+*	El plugin acepta cualquier links social
+*	ya sea Facebook, Twitter, GitHub y pagina WEB
+*	Compatible con la nueva version de SpiGot 1.7 / 1.8
+*/
+
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -18,6 +27,16 @@ public class Main extends JavaPlugin implements Listener{
 	}
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
+		Player jugador = (Player)sender;
+		if(cmd.getName().equalsIgnoreCase("Mensaje")){
+			jugador.sendMessage(ChatColor.AQUA + "============" + ChatColor.DARK_GRAY + "[" + ChatColor.GOLD + "Code" + ChatColor.DARK_GRAY + "]" + ChatColor.AQUA + "===========");
+			jugador.sendMessage(ChatColor.YELLOW + " » Bienvenido al servidor «");
+			jugador.sendMessage(ChatColor.AQUA + "Visita nuesta pagina de facebook »" + " " + Facebook);
+			jugador.sendMessage(ChatColor.AQUA + "Siguenos en Twitter »" + " " + Twitter);
+			jugador.sendMessage(ChatColor.AQUA + "Developer? Vista nuestro GitHub »" + " " + GitHub);
+			jugador.sendMessage(ChatColor.AQUA + "Mira nuesta pagina web »" + " " + WEB);
+			jugador.sendMessage(ChatColor.AQUA + "=============================");
+		}
 		return false;
 	}
 	
