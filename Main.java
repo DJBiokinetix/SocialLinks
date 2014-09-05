@@ -51,7 +51,7 @@ public class Main extends JavaPlugin implements Listener{
 			jugador.sendMessage(ChatColor.GREEN + "¡Configuración recargada!");
 		}if(cmd.getName().equalsIgnoreCase("IP")){
 			sender.sendMessage(ChatColor.AQUA + "¡Invita a tus amigos al servidor!");
-			sender.sendMessage(ChatColor.RED + "Nuestra IP:" + " " + ChatColor.GREEN + "mc.playcraftsv.com");
+			sender.sendMessage(ChatColor.RED + IP);
 		}
 		return false;
 	}
