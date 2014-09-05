@@ -7,6 +7,15 @@ package me.DJBiokinetix;
 *	El plugin acepta cualquier links social
 *	ya sea Facebook, Twitter, GitHub y pagina WEB
 *	Compatible con la nueva version de SpiGot 1.7 / 1.8
+*
+*	Se puede agregar el metodo "onFoodLevelChange" para un lobby o kitpvp
+*
+*	@EventHandler
+*	public void onFoodLevelChange(FoodLevelChangeEvent evt){
+*	evt.setFoodLevel(20);
+*	}
+*
+*
 */
 
 import org.bukkit.ChatColor;
@@ -64,16 +73,5 @@ public class Main extends JavaPlugin implements Listener{
 		jugador.sendMessage(ChatColor.AQUA + "=============================");
 		}
 	}
-	
-	/*
-	*	¡Se puede agregar el metodo "onFoodLevelChange" para un lobby o kitpvp!
-	*
-	*	@EventHandler
-	*	public void onFoodLevelChange(FoodLevelChangeEvent evt){
-	*	evt.setFoodLevel(20);
-	*	}
-	*
-	*/
-	
 }
 
