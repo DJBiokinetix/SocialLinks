@@ -1,8 +1,8 @@
 package me.DJBiokinetix;
 
 /*
-*	Plugin de Plugin hecho para PlayCraft Network
-*	Plugin especial para links sociales
+*	Plugin hecho para PlayCraft Network
+*	plugin especial para links sociales
 *	API: craftbukkit-1.7-R0.1
 *	El plugin acepta cualquier links social
 *	ya sea Facebook, Twitter, GitHub y pagina WEB
