@@ -30,12 +30,19 @@ public class Main extends JavaPlugin implements Listener{
 		Player jugador = (Player)sender;
 		if(cmd.getName().equalsIgnoreCase("Mensaje")){
 			jugador.sendMessage(ChatColor.AQUA + "============" + ChatColor.DARK_GRAY + "[" + ChatColor.GOLD + "Code" + ChatColor.DARK_GRAY + "]" + ChatColor.AQUA + "===========");
-			jugador.sendMessage(ChatColor.YELLOW + " » Bienvenido al servidor «");
+			jugador.sendMessage(ChatColor.YELLOW + " » " + ChatColor.DARK_RED + ChatColor.BOLD + "Play" + " " + ChatColor.GREEN  + ChatColor.BOLD + "Craft" + ChatColor.YELLOW + ChatColor.BOLD + "Network" + " " + ChatColor.YELLOW + " «");
 			jugador.sendMessage(ChatColor.AQUA + "Visita nuesta pagina de facebook »" + " " + Facebook);
 			jugador.sendMessage(ChatColor.AQUA + "Siguenos en Twitter »" + " " + Twitter);
-			jugador.sendMessage(ChatColor.AQUA + "Developer? Vista nuestro GitHub »" + " " + GitHub);
+			jugador.sendMessage(ChatColor.AQUA + "¿Developer? Vista nuestro GitHub »" + " " + GitHub);
 			jugador.sendMessage(ChatColor.AQUA + "Mira nuesta pagina web »" + " " + WEB);
 			jugador.sendMessage(ChatColor.AQUA + "=============================");
+		}if(cmd.getName().equalsIgnoreCase("configrl")){
+			saveDefaultConfig();
+			reloadConfig();
+			jugador.sendMessage(ChatColor.GREEN + "¡Configuración recargada!");
+		}if(cmd.getName().equalsIgnoreCase("IP")){
+			sender.sendMessage(ChatColor.AQUA + "¡Invita a tus amigos al servidor!");
+			sender.sendMessage(ChatColor.RED + "Nuestra IP:" + " " + ChatColor.GREEN + "mc.playcraftsv.com");
 		}
 		return false;
 	}
@@ -57,5 +64,16 @@ public class Main extends JavaPlugin implements Listener{
 		jugador.sendMessage(ChatColor.AQUA + "=============================");
 		}
 	}
+	
+	/*
+	*	¡Se puede agregar el metodo "onFoodLevelChange" para un lobby o kitpvp!
+	*
+	*	@EventHandler
+	*	public void onFoodLevelChange(FoodLevelChangeEvent evt){
+	*	evt.setFoodLevel(20);
+	*	}
+	*
+	*/
+	
 }
 
