@@ -65,7 +65,7 @@ public class Main extends JavaPlugin implements Listener{
 		String WEB = getConfig().getString("WEB").replaceAll("&", "&");
 		Player jugador = e.getPlayer();
 		jugador.sendMessage(ChatColor.AQUA + "============" + ChatColor.DARK_GRAY + "[" + ChatColor.GOLD + "Code" + ChatColor.DARK_GRAY + "]" + ChatColor.AQUA + "===========");
-		jugador.sendMessage(ChatColor.YELLOW + " » Bienvenido al servidor «");
+		jugador.sendMessage(ChatColor.YELLOW + " » " + ChatColor.DARK_RED + ChatColor.BOLD + "Play" + " " + ChatColor.GREEN  + ChatColor.BOLD + "Craft" + ChatColor.YELLOW + ChatColor.BOLD + "Network" + " " + ChatColor.YELLOW + " «");
 		jugador.sendMessage(ChatColor.AQUA + "Visita nuesta pagina de facebook »" + " " + Facebook);
 		jugador.sendMessage(ChatColor.AQUA + "Siguenos en Twitter »" + " " + Twitter);
 		jugador.sendMessage(ChatColor.AQUA + "Developer? Vista nuestro GitHub »" + " " + GitHub);
